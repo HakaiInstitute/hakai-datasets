@@ -1,15 +1,8 @@
-<dataset type="EDDTableFromMultidimNcFiles" datasetID="HakaiWaterPropertiesInstrumentProfileProvisional" active="true">
-    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
-    <updateEveryNMillis>10000</updateEveryNMillis>
-    <fileDir>/datasets/HakaiWaterPropertiesInstrumentProfileProvisional/</fileDir>
-    <fileNameRegex>.*\.nc</fileNameRegex>
-    <recursive>true</recursive>
-    <pathRegex>.*</pathRegex>
-    <standardizeWhat>0</standardizeWhat>
-    <removeMVRows>true</removeMVRows>
-    <sortFilesBySourceNames></sortFilesBySourceNames>
-    <fileTableInMemory>true</fileTableInMemory>
-    <accessibleViaFiles>false</accessibleViaFiles>
+<dataset type="EDDTableFromDatabase" datasetID="HakaiWaterPropertiesInstrumentProfileProvisional" active="true">
+    <sourceUrl>hakai_erddap_sourceUrl</sourceUrl>
+    <driverName>org.postgresql.Driver</driverName>
+    <schemaName>erddap</schemaName>
+    <tableName>"HakaiWaterPropertiesInstrumentProfileProvisional"</tableName>
 
     <!-- <iso19115File>/xml/HakaiCTDQU39_iso19115.xml</iso19115File> -->
 
