@@ -1,9 +1,9 @@
 CREATE
 OR REPLACE VIEW erddap."HakaiWaterPropertiesInstrumentProfileResearch" AS
 SELECT
-    x.*
+    *
 FROM
-    ctd.ctd_post_qc_data x
+    ctd.ctd_post_qc_data
 where
     work_area in ('QUADRA', 'CALVERT', 'JOHNSTON STRAIT')
     and status is null
@@ -32,4 +32,4 @@ where
         'RC1',
         'RC2',
         'RC3'
-    )
+    );
